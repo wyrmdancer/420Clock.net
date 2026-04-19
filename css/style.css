@@ -66,7 +66,13 @@ label
     pointer-events: none;
     animation: fall 5s linear infinite, spin 4s linear infinite;
 }
-
+.snoop_loop {
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    pointer-events: none;
+    animation: fall 5s linear infinite, spin 4s linear infinite;
+}
 /* --- Audio Prompt --- */
 #audioPrompt 
 {

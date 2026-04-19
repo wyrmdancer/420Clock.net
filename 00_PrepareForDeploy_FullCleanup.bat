@@ -47,12 +47,12 @@ mkdir "%OUTPUTDIST%"
 
 REM === COPY ROOT FILES TO DIST FOLDER ===
 echo Copying root files...
-for %%F in (*.html *.htm *.ico *.webmanifest *.png *.jpg *.jpeg *.gif *.svg *.json) do (
+for %%F in (*.html *.htm *.ico *.webmanifest *.png *.jpg *.jpeg *.gif *.svg *.json *.webm) do (
     if exist "%%F" copy "%%F" "%OUTPUTDIST%" >nul
 )
 
 REM === COPY RELEVANT DIRECTORIES TO DIST FOLDER ===
-set "FOLDERS=css static img snd"
+set "FOLDERS=css static img snd vid"
 for %%D in (%FOLDERS%) do (
     if exist "%SOURCE%%%D" (
         echo Copying folder %%D to temp...
